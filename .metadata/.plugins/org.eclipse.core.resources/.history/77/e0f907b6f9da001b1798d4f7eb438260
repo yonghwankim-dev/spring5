@@ -62,11 +62,6 @@ public class MainForSpring {
 		}
 	}
 
-	private static void processVersionCommand() {
-		VersionPrinter versionPrinter = ctx.getBean("versionPrinter",VersionPrinter.class);
-		versionPrinter.print();
-	}
-
 	private static void processInfoCommand(String[] arg) {
 		if(arg.length != 2)
 		{
