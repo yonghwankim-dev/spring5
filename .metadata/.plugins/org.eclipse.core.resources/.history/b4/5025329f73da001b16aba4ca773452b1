@@ -1,0 +1,10 @@
+package spring;
+
+public class MemberDao {
+
+	public void insert(Member newMember) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
