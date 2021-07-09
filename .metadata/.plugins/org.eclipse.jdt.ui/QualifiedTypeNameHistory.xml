@@ -13,17 +13,20 @@
 <fullyQualifiedTypeName name="spring.DuplicateMemberException"/>
 <fullyQualifiedTypeName name="spring.MemberNotFoundException"/>
 <fullyQualifiedTypeName name="spring.WrongIdPasswordException"/>
-<fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
 <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
 <fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
-<fullyQualifiedTypeName name="config.AppCtx"/>
-<fullyQualifiedTypeName name="spring.ChangePasswordService"/>
-<fullyQualifiedTypeName name="spring.MemberRegisterService"/>
 <fullyQualifiedTypeName name="java.util.Collection"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+<fullyQualifiedTypeName name="spring.MemberDao"/>
+<fullyQualifiedTypeName name="spring.MemberRegisterService"/>
+<fullyQualifiedTypeName name="spring.ChangePasswordService"/>
 <fullyQualifiedTypeName name="spring.MemberPrinter"/>
 <fullyQualifiedTypeName name="spring.MemberListPrinter"/>
-<fullyQualifiedTypeName name="spring.MemberDao"/>
 <fullyQualifiedTypeName name="spring.MemberInfoPrinter"/>
-<fullyQualifiedTypeName name="spring.VersionPrinter"/>
 <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+<fullyQualifiedTypeName name="spring.VersionPrinter"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Import"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="config.AppConfImport"/>
+<fullyQualifiedTypeName name="config.AppCtx"/>
 </qualifiedTypeNameHistroy>

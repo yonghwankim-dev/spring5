@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.buildship.ui.wizard.project.import">
-		<item key="project_location" value="C:\Users\qkdlf\Project\back-end\Spring5\spring5fs\sp5-chap03"/>
+		<item key="project_location" value="C:\Users\qkdlf\Project\back-end\Spring5\spring5fs\sp5-chap04"/>
 	</section>
 	<section name="org.eclipse.buildship.ui.wizard.project.creation">
-		<item key="project_location" value="C:\Users\qkdlf\Project\back-end\Spring5\spring5fs\test"/>
+		<item key="project_location" value="C:\Users\qkdlf\Project\back-end\Spring5\spring5fs\sp5-chap04"/>
 		<item key="use_default_location" value="true"/>
+		<item key="gradle_user_home" value="C:\Users\qkdlf\OneDrive\바탕 화면\tool\spring5\gradle-7.1"/>
+		<item key="java_home" value="C:\Program Files\Java\jdk1.8.0_291"/>
 	</section>
 </section>

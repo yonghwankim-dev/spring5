@@ -8,6 +8,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import assembler.Assembler;
+import config.AppConfImport;
 import config.AppCtx;
 import spring.ChangePasswordService;
 import spring.DuplicateMemberException;
@@ -21,7 +22,7 @@ public class MainForSpring {
 	
 	public static void main(String args[]) throws IOException
 	{
-		ctx = new AnnotationConfigApplicationContext(AppCtx.class);
+		ctx = new AnnotationConfigApplicationContext(AppConfImport.class);
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
 		while(true)
