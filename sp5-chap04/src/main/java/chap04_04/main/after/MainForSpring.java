@@ -1,4 +1,4 @@
-package chap04_04.main.before;
+package chap04_04.main.after;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import chap04_04.config.before.AppCtx;
+
 import chap04_04.spring.ChangePasswordService;
 import chap04_04.spring.DuplicateMemberException;
 import chap04_04.spring.MemberNotFoundException;
@@ -15,25 +15,22 @@ import chap04_04.spring.MemberRegisterService;
 import chap04_04.spring.RegisterRequest;
 import chap04_04.spring.VersionPrinter;
 import chap04_04.spring.WrongIdPasswordException;
-import chap04_04.spring.before.MemberInfoPrinter;
-import chap04_04.spring.before.MemberListPrinter;
+import chap04_04.spring.after.MemberInfoPrinter;
+import chap04_04.spring.after.MemberListPrinter;
+import chap04_04.config.after.AppCtx;
+
 /**
+ * 예제목적
+ * 상위 클래스(MemberPrinter)와 하위 클래스(MemberSuumaryPrinter) 타입의 빈 설정 메소드에
+ * @Qualifier 애노테이션을 부여하여 스프링이 빈 메소드를 한정 지을 수 있게 한다.
  * 
- * config.before.AppCtx.java의 내용을 보면
- * Bean 설정 메서드로 memberPrinter1() 메서드와 memberPrinter2() 메서드가 존재한다.
- * 그리고 두 메서드의 리턴타입은 MemberPrinter와 MemberSummaryPrinter 클래스 타입이다.
- * 하지만 MemberPrinter 클래스는 MemberSummaryPrinter 클래스의 상위 클래스이므로
- * 빈 설정 메서드는 자동 의존 주입 과정에서 어떤 빈을 주입해야 할지 알 수 없다.
+ * config.after.AppCtx.java : memberPrinter1 메서드에 "printer" 한정자 값 부여
+ * spring.after.MemberInfoPrinter.java : MemberPrinter 의존 객체에게 "printer" 한정자 값 부여
+ * spring.after.MemberListPrinter.java : MemberPrinter 의존 객체에게 "summaryPrinter" 한정자값 부여
  * 
- * config.before.AppCtx.java : 상위클래스(MemberPrinter)와 하위클래스(MemberSummaryPrinter) 타입에 대한
- * 								빈 설정 메서드를 생성함
- * spring.before.MemberInfoPrinter.java : MemberPrinter 의존 객체의 @Qualifier 애노테이션 삭제
- * spring.before.MemberListPrinter.java : MemberPrinter 의존 객체의 @Qualifier 애노테이션 삭제
- * 
- *  실행결과
- *  스프링 컨테이너는 MemberPrinter 타입의 두 의존객체에 자동 의존 주입을 수행 중 memberPrinter1 빈 설정 메서드와
- *  memberPrinter2 빈 설정 메소드 중 한정할 대상을 구분할 수 없어 NoUniqueBeanDefinitionException 예외를 발생시킨다.
- *
+ * 실행결과
+ * info, list 명령어 수행시 MemberPrinter 클래스의 print 메소드인지, MemberSummaryPrinter 클래스의 메소드인지
+ * 확인이 가능하다.
  */
 public class MainForSpring {
 

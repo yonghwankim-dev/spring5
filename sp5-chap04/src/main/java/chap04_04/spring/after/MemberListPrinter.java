@@ -1,4 +1,4 @@
-package chap04_04.spring.before;
+package chap04_04.spring.after;
 
 import java.util.Collection;
 
@@ -37,8 +37,9 @@ public class MemberListPrinter {
 	}
 
 	// 특이점
-	// @Qualifier 애노테이션 삭제
+	// @Qualifier 애노테이션 적용, 스프링이 자동 주입시 memberPrinter2() 메소드로 한정하게됨
 	@Autowired
+	@Qualifier("summaryPrinter")
 	public void setPrinter(MemberPrinter printer) {
 		this.printer = printer;
 	}

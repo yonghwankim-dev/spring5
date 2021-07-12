@@ -1,5 +1,6 @@
-package chap04_04.config.before;
+package chap04_04.config.after;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -9,8 +10,8 @@ import chap04_04.spring.MemberPrinter;
 import chap04_04.spring.MemberRegisterService;
 import chap04_04.spring.MemberSummaryPrinter;
 import chap04_04.spring.VersionPrinter;
-import chap04_04.spring.before.MemberInfoPrinter;
-import chap04_04.spring.before.MemberListPrinter;
+import chap04_04.spring.after.MemberInfoPrinter;
+import chap04_04.spring.after.MemberListPrinter;
 
 
 @Configuration
@@ -58,16 +59,18 @@ public class AppCtx{
 	}
 	
 	// 특이점
-	// memberPrinter1 빈 설정 메소드와 memberPrinter2 빈 설정 메서드가
-	// 리턴의 이름은 다르지만 MemberSummaryPrinter는 MemberPrinter 클래스의
-	// 하위 클래스 이므로 자동 의존 주입 과정에서 중복을 일으키는 문제가 발생한다. 
+	// @Qualifier 애노테이션 적용, 한정자 값 "printer"로 설정
 	@Bean
+	@Qualifier("printer")
 	public MemberPrinter memberPrinter1()
 	{
 		return new MemberPrinter();
 	}
-	
+
+	// 특이점
+	// @Qualifier 애노테이션 적용, 한정자 값 "summaryPrinter"로 설정
 	@Bean
+	@Qualifier("summaryPrinter")
 	public MemberSummaryPrinter memberPrinter2()
 	{
 		return new MemberSummaryPrinter();

@@ -1,6 +1,7 @@
-package chap04_04.spring.before;
+package chap04_04.spring.after;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 import chap04_04.spring.Member;
 import chap04_04.spring.MemberDao;
@@ -22,13 +23,15 @@ public class MemberInfoPrinter {
 		System.out.println();
 	}
 	
-	// 특이점
-	// @Qualifier 애노테이션 삭제
+
 	@Autowired
 	public void setMemDao(MemberDao memDao) {
 		this.memDao = memDao;
 	}
+	// 특이점
+	// @Qualifier 애노테이션 적용, 스프링이 자동 주입시 memberPrinter1() 메소드로 한정하게됨
 	@Autowired	
+	@Qualifier("printer")
 	public void setPrinter(MemberPrinter printer) {
 		this.printer = printer;
 	}

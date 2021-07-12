@@ -50,7 +50,5 @@ public class MemberListPrinter {
 	}
 	public MemberPrinter getPrinter() {
 		return printer;
-	}
-	
-	
+	}	
 }
