@@ -1,21 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="chap04_04.spring.WrongIdPasswordException"/>
-<fullyQualifiedTypeName name="chap04_04.spring.before.MemberListPrinter"/>
-<fullyQualifiedTypeName name="chap04_04.spring.MemberPrinter"/>
-<fullyQualifiedTypeName name="chap04_04.spring.before.MemberSummaryPrinter"/>
-<fullyQualifiedTypeName name="chap04_04.spring.ChangePasswordService"/>
-<fullyQualifiedTypeName name="chap04_04.spring.before.MemberInfoPrinter"/>
-<fullyQualifiedTypeName name="chap04_04.spring.VersionPrinter"/>
-<fullyQualifiedTypeName name="chap04_04.config.before.AppCtx"/>
-<fullyQualifiedTypeName name="chap04_03.spring.RegisterRequest"/>
-<fullyQualifiedTypeName name="chap04_03.spring.DuplicateMemberException"/>
-<fullyQualifiedTypeName name="chap04_03.spring.MemberNotFoundException"/>
-<fullyQualifiedTypeName name="chap04_03.spring.WrongIdPasswordException"/>
-<fullyQualifiedTypeName name="chap04_03.spring.MemberDao"/>
-<fullyQualifiedTypeName name="chap04_03.spring.MemberRegisterService"/>
-<fullyQualifiedTypeName name="chap04_03.spring.ChangePasswordService"/>
-<fullyQualifiedTypeName name="chap04_03.spring.before.MemberListPrinter"/>
 <fullyQualifiedTypeName name="chap04_03.spring.MemberInfoPrinter"/>
 <fullyQualifiedTypeName name="chap04_03.spring.VersionPrinter"/>
 <fullyQualifiedTypeName name="chap04_03.spring.after.MemberInfoPrinter"/>
@@ -54,10 +38,26 @@
 <fullyQualifiedTypeName name="chap05_01.config.NoProduct"/>
 <fullyQualifiedTypeName name="chap05_01.config.ManualBean"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
-<fullyQualifiedTypeName name="chap07.Calculator"/>
 <fullyQualifiedTypeName name="chap07.ExeTimeCalculator"/>
 <fullyQualifiedTypeName name="chap07.ImpleCalculator"/>
 <fullyQualifiedTypeName name="chap07.ExeMillTimeCalculator"/>
-<fullyQualifiedTypeName name="chap07.RecCalculator"/>
+<fullyQualifiedTypeName name="java.security.Signature"/>
+<fullyQualifiedTypeName name="org.aspectj.lang.Signature"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
 <fullyQualifiedTypeName name="org.springframework.context.annotation.EnableAspectJAutoProxy"/>
+<fullyQualifiedTypeName name="aspect.ExeTimeAspect"/>
+<fullyQualifiedTypeName name="config.AppCtx"/>
+<fullyQualifiedTypeName name="chap07.RecCalculator"/>
+<fullyQualifiedTypeName name="org.aspectj.lang.annotation.Aspect"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="org.aspectj.lang.ProceedingJoinPoint"/>
+<fullyQualifiedTypeName name="org.aspectj.lang.annotation.Around"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
+<fullyQualifiedTypeName name="config.AppCtxWithCache"/>
+<fullyQualifiedTypeName name="aspect.CacheAspect"/>
+<fullyQualifiedTypeName name="org.aspectj.lang.annotation.Pointcut"/>
+<fullyQualifiedTypeName name="chap07.Calculator"/>
 </qualifiedTypeNameHistroy>
