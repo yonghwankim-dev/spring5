@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="chap04_03.spring.MemberInfoPrinter"/>
-<fullyQualifiedTypeName name="chap04_03.spring.VersionPrinter"/>
-<fullyQualifiedTypeName name="chap04_03.spring.after.MemberInfoPrinter"/>
-<fullyQualifiedTypeName name="chap04_02.spring.before.MemberListPrinter"/>
-<fullyQualifiedTypeName name="chap04_02.spring.before.MemberRegisterService"/>
-<fullyQualifiedTypeName name="chap04_02.spring.after.MemberRegisterService"/>
-<fullyQualifiedTypeName name="chap04_02.spring.after.ChangePasswordService"/>
-<fullyQualifiedTypeName name="chap04_02.spring.after.MemberListPrinter"/>
-<fullyQualifiedTypeName name="chap04_02.spring.after.MemberInfoPrinter"/>
-<fullyQualifiedTypeName name="chap04_03.spring.MemberPrinter"/>
-<fullyQualifiedTypeName name="chap04_03.spring.before.MemberInfoPrinter2"/>
-<fullyQualifiedTypeName name="chap04_03.config.before.AppCtx2"/>
-<fullyQualifiedTypeName name="chap04_03.spring.after.MemberListPrinter"/>
 <fullyQualifiedTypeName name="chap04_03.spring.after.MemberListPrinter2"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="java.util.Optional"/>
@@ -60,4 +47,17 @@
 <fullyQualifiedTypeName name="aspect.CacheAspect"/>
 <fullyQualifiedTypeName name="org.aspectj.lang.annotation.Pointcut"/>
 <fullyQualifiedTypeName name="chap07.Calculator"/>
+<fullyQualifiedTypeName name="MemberDao"/>
+<fullyQualifiedTypeName name="javax.sql.DataSource"/>
+<fullyQualifiedTypeName name="org.springframework.jdbc.core.JdbcTemplate"/>
+<fullyQualifiedTypeName name="spring.MemberDao"/>
+<fullyQualifiedTypeName name="java.sql.SQLException"/>
+<fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="java.sql.Statement"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="org.springframework.jdbc.core.RowMapper"/>
+<fullyQualifiedTypeName name="spring.Member"/>
+<fullyQualifiedTypeName name="spring.MemberRowMapper"/>
 </qualifiedTypeNameHistroy>
